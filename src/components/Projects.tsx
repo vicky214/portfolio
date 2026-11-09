@@ -27,11 +27,11 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 relative bg-slate-950/40 border-t border-slate-900">
-      {/* Background radial glow */}
+
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-4">
@@ -45,7 +45,6 @@ export default function Projects() {
             </p>
           </div>
 
-          {/* Category Filter Pills */}
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
@@ -63,7 +62,6 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, idx) => (
@@ -77,7 +75,7 @@ export default function Projects() {
                 className="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800/80 bg-slate-900/40 hover:border-cyan-500/30 hover:bg-slate-900/70 transition-all flex flex-col justify-between group"
               >
                 <div>
-                  {/* Category, Folder & Role */}
+
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
                     <div className="flex items-center gap-2">
                       <span className="px-3 py-1 rounded-full text-xs font-mono font-medium bg-slate-800/90 text-cyan-300 border border-slate-700/60">
@@ -95,7 +93,6 @@ export default function Projects() {
                     </span>
                   </div>
 
-                  {/* Title & Tagline */}
                   <h3 className="text-2xl font-bold text-white group-hover:text-cyan-300 transition-colors tracking-tight">
                     {project.title}
                   </h3>
@@ -103,12 +100,10 @@ export default function Projects() {
                     {project.tagline}
                   </p>
 
-                  {/* Description */}
                   <p className="text-slate-300 text-sm leading-relaxed mb-6">
                     {project.description}
                   </p>
 
-                  {/* Concrete Performance Metrics */}
                   <div className="grid grid-cols-3 gap-2 mb-6 p-3 rounded-xl bg-slate-950/70 border border-slate-800/70">
                     {project.metrics.map((metric, i) => (
                       <div key={i} className="text-center">
@@ -122,7 +117,6 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  {/* Architectural Highlights */}
                   <div className="space-y-2 mb-6">
                     <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
                       Key Architectural Highlights:
@@ -136,7 +130,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Footer: Tech Stack & Links */}
                 <div>
                   <div className="pt-4 border-t border-slate-800/70 flex flex-wrap gap-1.5 mb-6">
                     {project.techStack.map((tech) => (

@@ -25,7 +25,7 @@ export default function About() {
   return (
     <section id="about" className="py-24 relative border-t border-slate-900 bg-slate-950/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-4">
             <span>About Me</span>
@@ -38,9 +38,8 @@ export default function About() {
           </p>
         </div>
 
-        {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Narrative */}
+
           <div className="lg:col-span-7 space-y-6 text-slate-300 leading-relaxed text-base sm:text-lg">
             {about.bio.map((paragraph, idx) => (
               <p key={idx} className="text-slate-300">
@@ -48,7 +47,6 @@ export default function About() {
               </p>
             ))}
 
-            {/* Quick Badges */}
             <div className="pt-4 flex flex-wrap gap-3">
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs sm:text-sm font-mono">
                 <MapPin className="w-4 h-4 text-cyan-400" />
@@ -65,7 +63,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Right Column: Architectural Principles */}
           <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
             {about.principles.map((item, idx) => (
               <div

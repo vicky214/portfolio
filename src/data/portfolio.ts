@@ -223,6 +223,58 @@ export const PORTFOLIO_DATA = {
       githubUrl: "https://github.com",
       featured: true,
     },
+    {
+      id: "bookmyshow-concurrency-engine",
+      title: "BookMyShow High-Concurrency Ticketing & B2B API Platform",
+      tagline: "Enterprise ticketing engine with atomic 10-minute hold leases, MySQL 8 compound indexing, Admin backoffice, and secure B2B HMAC Gateway.",
+      description:
+        "Horizontally scalable movie ticketing platform built to eliminate double-booking race conditions during flash ticket sales. Engineered around a two-phase seat reservation state machine (Redis Distributed Mutex + MySQL InnoDB row-level locking with SELECT FOR UPDATE), an atomic background lock sweeper for 10-minute hold expirations, an internal Company Admin panel with cinema GPS mapping and collision-free showtime scheduling, a real-time Box Office analytics dashboard, and a secure B2B API Gateway with HMAC SHA-256 signatures and distributed token bucket rate limiting.",
+      role: "Principal Systems Architect",
+      category: "Full Stack & Distributed Systems",
+      folderName: "bookmyshow",
+      techStack: ["Node.js", "Express", "TypeScript", "MySQL 8.0", "Redis Distributed Mutex", "React 19", "Tailwind CSS", "HMAC SHA-256"],
+      metrics: ["Zero Double Bookings", "10-Min Hold Leases", "600 RPM B2B Quota", "<10ms Indexed Queries"],
+      highlights: [
+        "Two-phase seat locking (Redis distributed mutex + MySQL InnoDB row-level locking) guaranteeing absolute exclusivity under 100+ concurrent racers",
+        "Stateless background sweeper worker executing atomic SQL range updates to auto-restore expired 10-minute holds across multiple server instances",
+        "Company Admin backoffice with cinema GPS geo-coordinates, custom tiered seat layout designer (Recliner/Prime/Classic), and schedule collision detection",
+        "Secure B2B Partner API Gateway with HMAC SHA-256 signature verification, replay attack defense, and distributed Token Bucket rate limiting",
+      ],
+      liveUrl: "https://github.com",
+      githubUrl: "https://github.com",
+      featured: true,
+    },
+    {
+      id: "amazon-scale-ecommerce",
+      title: "Amazon-Scale Microservices E-Commerce Platform (Zero-REST Architecture)",
+      tagline: "12 Decoupled Microservices connected purely via Sockets & Message Queues with Distributed Saga Orchestrator and Transactional Outbox.",
+      description:
+        "Amazon-scale distributed e-commerce platform architected without internal synchronous REST dependencies. Inter-service communications operate strictly over partitioned message queues (Kafka/AMQP topic buses) and bidirectional socket streams. Features a distributed Saga Orchestration engine with automated compensation rollbacks, Transactional Outbox pattern with Change Data Capture (CDC) guaranteeing zero event loss during broker outages, 3-state Circuit Breaker isolating payment outages, Redis-backed sub-millisecond cart, multi-warehouse CAS stock reservations, and a real-time web application with live visual Saga pipeline, socket mesh monitor, and GPS delivery tracking.",
+      role: "Principal Systems Architect",
+      category: "Distributed Systems",
+      folderName: "ecommerce-platform",
+      techStack: [
+        "12 Microservices",
+        "Pure Sockets (Zero REST)",
+        "Kafka Event Bus",
+        "Distributed Saga",
+        "Transactional Outbox (CDC)",
+        "3-State Circuit Breaker",
+        "Redis Session Cart",
+        "React 19 & WebSockets"
+      ],
+      metrics: ["12 Decoupled Services", "0 Internal REST Calls", "Sub-ms Socket RPC", "100% Zero Event Loss", "8/8 Sim Tests Passed"],
+      highlights: [
+        "Strict Zero-REST inter-service constraint: commands travel over bidirectional socket streams and events over partitioned topic queues",
+        "Distributed Saga Orchestrator coordinating forward transactions and executing automated reverse compensation rollbacks upon downstream payment failures",
+        "Transactional Outbox pattern with CDC poller daemon ensuring ACID atomic commits between database and queue with zero event loss during broker downtime",
+        "3-State Circuit Breaker (CLOSED -> OPEN -> HALF-OPEN) preventing cascading failures with AWS Full Jitter exponential backoff retries",
+        "Real-time visual web application featuring interactive Saga pipeline execution, socket network monitor, and live GPS courier tracking",
+      ],
+      liveUrl: "https://github.com",
+      githubUrl: "https://github.com",
+      featured: true,
+    },
   ] as Project[],
   skillsCategories: [
     {

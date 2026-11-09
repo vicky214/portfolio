@@ -43,11 +43,11 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      {/* Background ambient light */}
+
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-4">
             <span>Get in Touch</span>
@@ -61,9 +61,9 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          {/* Left Column: Direct Info & Quick Copy */}
+
           <div className="lg:col-span-5 space-y-6">
-            {/* Direct Contact Card */}
+
             <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800/80 bg-slate-900/40 space-y-6">
               <div>
                 <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-2">
@@ -95,7 +95,6 @@ export default function Contact() {
                 )}
               </div>
 
-              {/* Status and Location */}
               <div className="space-y-3 pt-2 border-t border-slate-800/70">
                 <div className="flex items-center gap-3 text-slate-300 text-sm">
                   <MapPin className="w-4 h-4 text-cyan-400 shrink-0" />
@@ -111,7 +110,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Social Channels */}
               <div className="pt-4 border-t border-slate-800/70">
                 <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-3">
                   Connect on Platforms
@@ -140,7 +138,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Column: Interactive Contact Form */}
           <div className="lg:col-span-7">
             <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800/80 bg-slate-900/40">
               <h3 className="text-xl font-bold text-white mb-2">

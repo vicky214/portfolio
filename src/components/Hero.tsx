@@ -17,17 +17,16 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
-      {/* Background Ambient Glows */}
+
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-1/3 left-1/4 w-[400px] h-[300px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute top-1/3 right-1/4 w-[450px] h-[320px] bg-purple-600/10 rounded-full blur-[110px] pointer-events-none" />
 
-      {/* Decorative Grid Lines */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b12_1px,transparent_1px),linear-gradient(to_bottom,#1e293b12_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_35%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Status Badge */}
+
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,7 +39,6 @@ export default function Hero() {
             <span className="text-slate-400 font-mono">5+ Years Exp</span>
           </motion.div>
 
-          {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,7 +53,6 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          {/* Subtitle / Bio summary */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,7 +62,6 @@ export default function Hero() {
             {personal.heroSubheading}
           </motion.p>
 
-          {/* CTA Buttons & Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -117,7 +113,6 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Metric Stats Cards */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -144,7 +139,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Down indicator */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-slate-600 animate-bounce hidden md:block">
         <ArrowDown className="w-5 h-5" />
       </div>

@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="border-t border-slate-900 bg-black/60 py-12 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Logo & Sub */}
+
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
               <Terminal className="w-4 h-4" />
@@ -30,7 +30,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 font-medium">
             <a href="#about" className="hover:text-cyan-400 transition-colors">
               About
@@ -52,7 +51,6 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Back to Top */}
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 text-xs font-mono transition-colors"

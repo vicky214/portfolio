@@ -15,11 +15,11 @@ export default function Experience() {
 
   return (
     <section id="experience" className="py-24 relative">
-      {/* Subtle ambient light */}
+
       <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-indigo-600/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/40 border border-indigo-800/40 text-indigo-400 text-xs font-mono uppercase tracking-wider mb-4">
             <span>Career Trajectory</span>
@@ -32,7 +32,6 @@ export default function Experience() {
           </p>
         </div>
 
-        {/* Timeline Container */}
         <div className="relative border-l-2 border-slate-800/80 ml-4 sm:ml-6 md:ml-8 pl-6 sm:pl-8 space-y-12">
           {experiences.map((exp, idx) => (
             <motion.div
@@ -43,14 +42,13 @@ export default function Experience() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="relative group"
             >
-              {/* Timeline Pin/Dot */}
+
               <div className="absolute -left-[35px] sm:-left-[43px] top-1.5 w-6 h-6 rounded-full bg-slate-900 border-2 border-cyan-400 flex items-center justify-center group-hover:scale-125 group-hover:border-indigo-400 transition-all shadow-[0_0_12px_rgba(6,182,212,0.4)]">
                 <div className="w-2 h-2 rounded-full bg-cyan-400" />
               </div>
 
-              {/* Main Card */}
               <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800/80 bg-slate-900/40 hover:border-slate-700 hover:bg-slate-900/70 transition-all">
-                {/* Header info */}
+
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4 pb-4 border-b border-slate-800/60">
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-2">
@@ -77,12 +75,10 @@ export default function Experience() {
                   </div>
                 </div>
 
-                {/* Role summary */}
                 <p className="text-slate-300 text-sm sm:text-base mb-5 italic font-sans">
                   &ldquo;{exp.summary}&rdquo;
                 </p>
 
-                {/* Bullets */}
                 <ul className="space-y-3 mb-6">
                   {exp.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start gap-3 text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -92,7 +88,6 @@ export default function Experience() {
                   ))}
                 </ul>
 
-                {/* Tech tags */}
                 <div className="pt-2 flex flex-wrap gap-2">
                   {exp.technologies.map((tech) => (
                     <span

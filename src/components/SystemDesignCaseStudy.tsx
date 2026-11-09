@@ -24,11 +24,11 @@ export default function SystemDesignCaseStudy() {
 
   return (
     <section id="case-study" className="py-24 relative overflow-hidden">
-      {/* Background radial glow */}
+
       <div className="absolute top-1/2 right-1/4 w-[600px] h-[400px] bg-cyan-600/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-4">
             <span>High-Level Architecture Breakdown</span>
@@ -41,9 +41,8 @@ export default function SystemDesignCaseStudy() {
           </p>
         </div>
 
-        {/* Main Case Study Box */}
         <div className="glass-panel rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-800/90 bg-slate-900/60 shadow-2xl relative">
-          {/* Challenge Box */}
+
           <div className="mb-10 p-6 rounded-2xl bg-slate-950/70 border border-amber-500/20">
             <div className="flex items-center gap-2 text-amber-400 font-semibold text-sm font-mono uppercase tracking-wider mb-2">
               <span className="w-2 h-2 rounded-full bg-amber-400"></span>
@@ -54,7 +53,6 @@ export default function SystemDesignCaseStudy() {
             </p>
           </div>
 
-          {/* Before & After Benchmark Metrics */}
           <div className="mb-12">
             <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
               <Cpu className="w-5 h-5 text-cyan-400" />
@@ -86,7 +84,6 @@ export default function SystemDesignCaseStudy() {
             </div>
           </div>
 
-          {/* Solution Architecture Steps */}
           <div>
             <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
               <Server className="w-5 h-5 text-indigo-400" />

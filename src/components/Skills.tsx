@@ -44,7 +44,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 relative bg-slate-950/40 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
+
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/40 border border-cyan-800/40 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-4">
             <span>Technical Capabilities</span>
@@ -57,7 +57,6 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Category Tab Buttons */}
         <div className="flex flex-wrap gap-2.5 mb-10 pb-2">
           {skillsCategories.map((cat, idx) => (
             <button
@@ -75,7 +74,6 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Active Category Skills Panel */}
         <div className="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800/80 bg-slate-900/40">
           <div className="mb-6 pb-4 border-b border-slate-800/70">
             <h3 className="text-xl font-bold text-white flex items-center gap-2.5">
